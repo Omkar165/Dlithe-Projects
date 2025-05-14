@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background: #004aad;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+/* Sections */
+section {
+    width: 80%;
+    margin: 50px auto;
+    padding: 40px 30px;
+    background: #e6f2ff; /* Light blue background */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Fade-in animation on scroll */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Zoom-in effect on hover */
+section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Login Options */
+.login-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.login-options a {
+    padding: 12px 25px;
+    background: #004aad;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 74, 173, 0.3);
+    font-size: 1rem;
+}
+
+.login-options a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 74, 173, 0.5);
+    background: #003a8c;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #004aad;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    .login-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-options a {
+        width: 80%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions - Banking Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <h2>Banking Dashboard</h2>
+        <ul>
+            <li><a href="dashboard.html">🏠 Home</a></li>
+            <li><a href="accounts.html">💳 Accounts</a></li>
+            <li><a href="transactions.html">🔄 Transactions</a></li>
+            <li><a href="transfer.html">💰 Transfer Funds</a></li>
+            <li><a href="settings.html">⚙️ Settings</a></li>
+            <li><a href="online-banking.html" id="logout">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <div class="card">
+            <h2>Recent Transactions</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>25 Feb 2025</td>
+                    <td>Amazon Purchase</td>
+                    <td>- ₹ 3,000</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>20 Feb 2025</td>
+                    <td>Salary Credit</td>
+                    <td>+ ₹ 45,000</td>
+                    <td>Completed</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+    <!-- <script src="logout.js"></script> -->
+</body>
+</html>

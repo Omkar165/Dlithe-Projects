@@ -1,0 +1,250 @@
+/* ---------- App Wrapper ---------- */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------- Page Wrapper & Background ---------- */
+.doctor-detail-page {
+  flex: 1;
+  background: linear-gradient(135deg, #95b8ed 0%, #d5cccc 100%);
+  padding: 3rem 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans‑serif;
+}
+
+/* ---------- Slot Buttons ---------- */
+.doctor-detail-page .slot-btn.selected {
+  background-color: #28a745;
+  color: white;
+}
+.doctor-detail-page .slot-btn {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.doctor-detail-page .slot-btn:hover {
+  background-color: #ddd;
+}
+
+/* ---------- Full-width Navbar ---------- */
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---------- Doctor Detail Container ---------- */
+.doctor-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 90%;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* ---------- Image Section ---------- */
+.doctor-image-section {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 10px;
+}
+.doctor-image-section img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 3px solid #e0e0e0;
+}
+
+/* ---------- Info Section ---------- */
+.doctor-info-section {
+  flex: 2;
+  min-width: 300px;
+  margin: 10px;
+  padding: 10px 20px;
+}
+.doctor-info-section h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #0d99ff;
+}
+.doctor-info-section p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+.doctor-info-section .specialization {
+  font-weight: 600;
+  color: #333;
+}
+.doctor-info-section .fee {
+  font-weight: bold;
+  color: #2563eb;
+  margin-top: 10px;
+}
+
+/* ---------- Booking Section ---------- */
+.booking-section {
+  margin-top: 20px;
+  background-color: rgba(130, 169, 232, 0.98);
+  padding: 25px 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+.booking-section h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 20px;
+}
+.slot-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.slot-box {
+  background-color: #e6f0ff;
+  border: 2px solid #cce2ff;
+  border-radius: 16px;
+  padding: 12px 20px;
+  min-width: 160px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+.slot-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+.slot-box h4 {
+  font-size: 1.1rem;
+  color: #2563eb;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.times-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.slot-btn {
+  background-color: #dceeff;
+  border: 2px solid #b3d4fc;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  color: #1d4ed8;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.slot-btn:hover {
+  background-color: #b3d4fc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.date-slot.active,
+.time-slot.active,
+.slot-btn.active {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.book-appointment-btn {
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 12px 32px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.book-appointment-btn:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+/* ---------- Close Button Accent ---------- */
+.close-modal-btn {
+  background-color: #fa3838;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.close-modal-btn:hover {
+  background-color: #f53d3d;
+}
+
+/* ---------- Full-width Footer ---------- */
+.footer {
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+}
+@keyframes fadeInSmooth {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.medconnect-title {
+  display: flex;
+  gap: 1px;
+  font-size: 2.2rem;
+  color: #0b1180;
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+  align-self: flex-start;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+}
+
+.medconnect-title span {
+  opacity: 0;
+  animation: fadeInSmooth 0.5s forwards;
+  animation-timing-function: ease-in;
+  display: inline-block;
+}

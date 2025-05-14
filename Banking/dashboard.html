@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Banking Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <h2>Banking Dashboard</h2>
+        <ul>
+            <li><a href="#">🏠 Home</a></li>
+            <li><a href="accounts.html">💳 Accounts</a></li>
+            <li><a href="transactions.html">🔄 Transactions</a></li>
+            <li><a href="transfer.html">💰 Transfer Funds</a></li>
+            <li><a href="settings.html">⚙️ Settings</a></li>
+            <li><a href="#" id="logout">🚪 Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+        <header>
+            <h1>Welcome, User!</h1>
+            <p>Your last login: <span id="last-login">Feb 26, 2025</span></p>
+        </header>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Account Balance</h3>
+                <p>₹75,000</p>
+            </div>
+            <div class="card">
+                <h3>Recent Transactions</h3>
+                <p>View your latest transactions</p>
+                <a href="#">View Now</a>
+            </div>
+            <div class="card">
+                <h3>Quick Transfer</h3>
+                <p>Send money instantly</p>
+                <a href="#">Transfer</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+    <!-- <script src="logout.js"></script> -->
+
+</body>
+</html>

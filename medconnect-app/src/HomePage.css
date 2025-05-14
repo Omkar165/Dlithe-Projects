@@ -1,0 +1,367 @@
+/* src/HomePage.css */
+
+/* Reset or base styles (optional) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+  
+/* -------------- Navbar -------------- */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 2rem; 
+}
+  
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-img {
+    width: 70px; /* Increased from 60px to 70px */
+    height: auto;
+    margin-bottom: 0.2rem;
+}
+
+.logo h1 {
+    font-size: 1.3rem;
+    color: #007bff;
+    margin: 0;
+}
+  
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+  
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+  
+.nav-links a:hover {
+    color: #007bff;
+}
+  
+.sign-up-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+  
+.sign-up-btn:hover {
+    background-color: #0056b3;
+}
+  
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 2rem 2rem 2rem; /* Adjust padding if needed */
+    background: #f9fafc;
+    margin-top: -2rem; /* Moves the hero section upward */
+}
+  
+.hero-left {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.hero-left h2 {
+    font-size: 2.8rem; /* Larger font size */
+    margin-bottom: 0.5rem; /* Adjust margin */
+    line-height: 1.3;
+    margin-top: -5rem; /* Slightly lift the text */
+    background: linear-gradient(90deg, #003366, #0052cc); /* Gradient from navy to blue */
+    -webkit-background-clip: text; /* Apply gradient to text */
+    color: transparent; /* Make the text color transparent to show the gradient */
+    font-weight: 700; /* Bold text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow to give depth */
+}
+
+  
+.hero-left p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+  
+.cta-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    width: fit-content;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+  
+.cta-button:hover {
+    background-color: #1c7c31;
+}
+  
+.hero-right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.hero-right img {
+    max-width: 100%;
+    height: auto;
+}
+  
+/* -------------- Health Blogs Section -------------- */
+.health-blogs {
+    text-align: center;
+    padding: 3rem 2rem;
+    
+}
+  
+.health-blogs h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+  
+.health-blogs p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+  
+.blog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+  
+.blog-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+    width: 300px;
+    padding: 1rem;
+    text-align: center;
+    transition: box-shadow 0.2s ease;
+}
+  
+.blog-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+  
+.blog-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+  
+.blog-card h3 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+  
+.blog-card p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+  
+.blog-card button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+  
+.blog-card button:hover {
+    background-color: #0056b3;
+}
+  
+/* -------------- Tech Section -------------- */
+.tech-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background-color: #f9fbfd;
+    align-items: stretch; /* Makes text and image equal height */
+  }
+  
+  .tech-text {
+    flex: 1;
+    min-width: 320px;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .tech-text h2 {
+    font-size: 1.8rem;
+    color: #1d3557;
+    margin-bottom: 1rem;
+  }
+  
+  .tech-text .highlight {
+    color: #007bff; /* Highlight HyperAIa with professional color */
+  }
+  
+  .tech-text p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .tech-text ul {
+    list-style: disc inside;
+    color: #555;
+    padding-left: 1rem;
+    line-height: 1.6;
+  }
+  
+  .tech-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tech-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  
+  
+/* -------------- Testimonials Section -------------- */
+.testimonials {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #fff;
+}
+  
+.testimonials h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+  
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+  
+.testimonial-card {
+    background: #fafafa;
+    width: 300px;
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+  
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+  
+.testimonial-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+  
+.testimonial-card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+  
+/* -------------- Partners Section -------------- */
+.partners {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+  
+.partners h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+  
+.partners-logos {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.partners-logos img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+  
+.partners-logos img:hover {
+    transform: scale(1.05);
+}
+  
+/* -------------- Footer -------------- */
+.footer {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Additional footer information */
+.footer::after {
+    content: "MedConnect is your comprehensive healthcare companion connecting you with top medical professionals. Contact us: contact@medconnect.com";
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+  
+/* -------------- Background Image for HomePage -------------- */
+.home-page {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWchT_FvLlmLozgqvithYDGjuk4Tm4rZ4drmkeAyOcV7no6G3aEB3Ndj4&s');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

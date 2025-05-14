@@ -1,0 +1,118 @@
+.appointment-confirmation {
+  padding: 50px;
+  background: #f0f4fa;
+  min-height: 100vh;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #222;
+}
+
+.appointment-card {
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+}
+
+.doctor-image-container {
+  flex: 1;
+  background: #e6eef7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctor-image-container img {
+  width: 300px;  /* Increased circle size */
+  height: 300px;  /* Increased height for perfect circle */
+  object-fit: cover;
+  border-radius: 50%;  /* Perfect circle */
+  border: 5px solid #ddd;  /* Optional: Adds border for definition */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* Optional: Adds shadow around the image */
+}
+
+.appointment-info {
+  flex: 2;
+  padding: 50px;
+}
+
+.appointment-info h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.appointment-info p {
+  margin: 10px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.btn-group {
+  margin-top: 40px;
+}
+
+.cancel-btn,
+.pay-btn {
+  padding: 15px 25px;
+  margin-right: 25px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.cancel-btn {
+  background-color: #d9534f;
+  color: white;
+}
+
+.pay-btn {
+  background-color: #0275d8;
+  color: white;
+}
+.cancelled-notification {
+  position: fixed;
+  top: 20px; /* Positioned just below the top edge */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1284e9; /* Green color */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: fadeInOut 4s forwards; /* Animate for 4 seconds */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    top: 20px;
+  }
+  25% {
+    opacity: 1;
+    top: 20px;
+  }
+  75% {
+    opacity: 1;
+    top: 20px;
+  }
+  100% {
+    opacity: 0;
+    top: 20px;
+  }
+}
+
+.cancelled-notification p {
+  margin: 0;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background-color: burlywood;
+            color: black;
+        }
+        .content {
+            padding: 10px;
+        }
+        .news-article {
+            background-color: whitesmoke;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .image-container {
+            position: fixed;
+            top: 2%;
+            left: 50%;  
+            transform: translateX(500%);
+            transform: translateY(110%);
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            animation: showImage 4s forwards; /* Delay of 15 seconds, then fade-in */
+        }
+
+        @keyframes showImage {
+            0% { opacity: 0; }
+            93.75% { opacity: 0; } /* Stays invisible for 15 seconds */
+            100% { opacity: 1; }
+        }
+    </style>
+    <script>
+        function showCategory(category) {
+            let articles = document.getElementsByClassName('news-article');
+            for (let article of articles) {
+                article.style.display = (category === 'all' || article.classList.contains(category)) ? 'block' : 'none';
+            }
+        }
+        window.onload = function() {
+            showCategory('all');
+        };
+    </script>
+</head>
+<body style="background-color:cadetblue">
+<header>
+    <h1 style="color:azure" ><i>THE TIMES OF INDIA</i></h1>
+</header>
+
+<nav>
+    <a onclick="showCategory('all')">Home</a>
+    <a onclick="showCategory('politics')">Politics</a>
+    <a onclick="showCategory('sports')">Sports</a>
+    <a onclick="showCategory('entertainment')">Entertainment</a>
+    <a onclick="showCategory('travel')">Travel</a>
+</nav>
+
+<div class="content">
+    <div class="news-article politics">
+        <h2>Who is Gyanesh Kumar, the new chief election commissioner?</h2>
+        <p><strong>By HT News Desk | February 19, 2025</strong></p>
+        <p>Gyanesh Kumar's name was proposed by a committee headed by PM Narendra Modi...</p>
+    </div>
+
+    <div class="news-article entertainment">
+        <h2>Bangalore Open Air 2025: Flying the metal flag high</h2>
+        <p><strong>By The Hindu | February 18, 2025</strong></p>
+        <p>The recently concluded Bangalore Open Air was a study in how the festival has grown...</p>
+    </div>
+
+    <div class="image-container">
+        <marquee>
+        <a href="Travel Agency.html" target="_blank">
+        <img src="travel.jpeg" alt="Advertisement" width="175px" height="150px" style="top: 185px;right: 150px;"></a>
+        <p><strong><a href="registration.html">Bookings are available</a></strong></p>
+        </marquee>
+    </div>
+
+    <div class="news-article politics">
+        <h2>BJP accuses Kerala govt of supporting terror over Hamas, Hezbollah posters at local event</h2>
+        <p><strong>By Times of India | February 19, 2025</strong></p>
+        <p>The BJP in Kerala accused the CPI(M) government of supporting “anti-national and terror activities” for vote bank.
+            After posters of slain Hamas leader Yahya Sinwar and Hezbollah leader Hassan Nasrallah were spotted during a cultural festival in Palakkad district....</p>
+    </div>
+
+    <div class="news-article politics">
+        <h2>What outgoing CEC Rajiv Kumar said on poll losers in farewell remarks</h2>
+        <p><strong>By The Hindu | February 19, 2025</strong></p>
+        <p>“The Commission, as an institution, often finds itself unfairly blamed by those unwilling to accept electoral outcomes...</p>
+    </div>
+
+    <div class="news-article entertainment ">
+        <h2>Maha Kumbh: Prayagraj river water fails bathing quality standards, CPCB finds high faecal coliform levels</h2>
+        <p><strong>By The Hindu | February 19, 2025</strong></p>
+        <p>According to the Mahakumbh mela administration, the number of devotees who have bathed in the Mahakumbh since January 13 has surpassed 54.31 crore....</p>
+    </div>
+
+    <div class="news-article sports">
+        <h2>India wins Cricket World Cup 2025!</h2>
+        <p><strong>By ESPN | February 20, 2025</strong></p>
+        <p>India secured a thrilling victory in the final match of the World Cup...</p>
+    </div>
+
+    <div class="news-article travel">
+        <h2>Explore our travel agency!</h2>
+        <p><strong>Discover breathtaking destinations, amazing travel deals, and personalized vacation packages tailored just for you</strong></p>
+        <p>Whether you're looking for a relaxing beach escape, an adventurous trek...</p>
+        <a href="Travel Agency.html" target="_blank">Check for best places</a>
+    </div>
+</div>
+
+<footer>
+    <p style="text-align:center; padding: 10px; background-color: #333; color: white;">2025 News Website</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #004aad, #06b6d4);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffde59;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            gap: 50px;
+            text-align: left;
+        }
+
+        .hero-content {
+            max-width: 500px;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            color: #004aad;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Vision & Mission Sections */
+        .info-section {
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center content horizontally */
+            text-align: center; /* Center text */
+            justify-content: center;
+            padding: 50px;
+            background: #f3f4f6;
+            margin: 20px auto;
+            border-radius: 15px;
+            max-width: 80%; /* Keeps content width balanced */
+        }
+
+        .info-content {
+            max-width: 700px; /* Restricts text width for readability */
+        }
+
+        .info-section h2 {
+            font-size: 2em;
+            color: #004aad;
+        }
+
+        .info-section p, .info-section ul {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+        }
+        .cart-container {
+    background-color: #fff;
+    padding: 30px;
+    width: 70%;
+    max-width: 600px;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #a54a4a;
+}
+
+/* Heading styling */
+h1, h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+/* Add some subtle hover effect for the container */
+.cart-container:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+
+        /* Footer */
+        footer {
+            background: #022b3a;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            text-align: left;
+        }
+
+        .footer-section h3 {
+            color: #ffcc00;
+        }
+
+        .footer-copy {
+            margin-top: 20px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <h1>About Us</h1>
+            <ul class="nav-links">
+                <li><a href="index.html" class="button">Home</a></li>
+                <li><a href="about.html" class="button">About</a></li>
+                <li><a href="services.html" class="button">Services</a></li>
+                <li><a href="contact.html" class="button">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Our Bank</h2>
+            <p>We value every customer and provide personalized financial solutions tailored just for you.</p>
+            <a href="services.html" class="cta-button">Explore Services</a>
+        </div>
+         <div><img src="429949629_826668119499421_5430593702725071931_n(1)(1).png" weight="400px" height="400px"></div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="info-section">
+        <div class="info-content">
+            <h2>Our Vision</h2>
+            <p>To be the world’s most trusted retail bank, admired for its financial inclusion and excellence.</p>
+            <p>1️⃣ Financial Empowerment for All – Ensure seamless access to banking services for individuals and businesses, fostering economic growth.</p>
+            <p>2️⃣ Cutting-Edge Digital Innovation – Leverage AI, blockchain, and fintech solutions to offer smart, secure, and real-time banking experiences.</p>
+            <p>3️⃣ Customer-First Approach – Deliver hyper-personalized financial solutions based on customer needs, behavior, and aspirations.</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="info-section">
+        <div class="info-content">
+            <h2>Our Mission</h2>
+            <ul>
+                <p>Ensuring every customer feels valued.</p>
+                <p>Providing banking services for all.</p>
+                <p>Driving innovation and excellence.</p>
+            </ul>
+        </div>
+    </section>
+    <center> <section> <div class="cart-container">
+        <h1>Join Our Team</h1>
+        <p>When you choose a career with us, you're choosing a path that leads to growth, fulfillment, and the opportunity to make a real impact in the world of banking.</p>
+    </div> </section> <br> 
+    <section><div class="cart-container">
+        <h2>Investor Relations</h2>
+        <p>Explore our Investor Relations page to stay updated on our financial performance, corporate updates, and our dedication to sound financial stewardship.</p>
+    </div> </section></center>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:support@smallfinancebank.com">support@smallfinancebank.com</a></p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Address: 123 Finance Street, Mumbai, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2025 Small Finance Bank. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

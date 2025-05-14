@@ -1,0 +1,120 @@
+.App {
+  font-family: Arial, sans-serif;
+  background-color: cornsilk;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: grey;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.balance-section {
+  background-color: azure;
+  padding: 20px;
+  margin-top: 0px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+button {
+  padding: 15px 40px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.bill-recharge-section {
+  background-color: azure;
+  padding: 20px;
+  margin-top: 0px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.bill-recharge-section h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.bill-actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bill-actions button {
+  padding: 15px 30px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bill-actions button:hover {
+  background-color: #007B9A;
+}
+
+.add-bank-account {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.add-bank-account button {
+  background-color: #FF9800;
+  width: 80%;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.add-bank-account button:hover {
+  background-color: #F57C00;
+}

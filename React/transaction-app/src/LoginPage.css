@@ -1,0 +1,90 @@
+/* LoginPage.css */
+body {
+    background-color:azure;
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-container {
+    width: 350px;
+    margin: 80px auto;
+    padding: 20px;
+    background:cornsilk;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    border: solid 1px;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .app-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #4CAF50;
+  }
+  
+  h2 {
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  
+  input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .register-btn {
+    background-color: #007BFF;
+  }
+  
+  .register-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .forgot-password, .register {
+    margin-top: 10px;
+    cursor: pointer;
+    color: blue;
+    font-size: 14px;
+  }
+  
+  .forgot-password:hover, .register a:hover {
+    text-decoration: underline;
+  }
+  p{
+    color: rgb(1, 1, 1);
+  }
+  
+  

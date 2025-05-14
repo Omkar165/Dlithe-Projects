@@ -1,0 +1,122 @@
+/* Background container for Auth Pages */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+    /* ✅ Use a high-resolution background image */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5grJwStvvlsRhY3oMZ1QWGohUAd-9gk56Ew&s');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    /* Optional overlay for readability */
+    background-color: rgba(86, 176, 222, 0.83);
+    background-blend-mode: overlay;
+  
+    padding: 20px;
+  }
+  
+  /* Form Styling */
+  .auth-form {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .auth-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #0d99ff;
+  }
+  
+  /* Inputs, Selects, and Textarea */
+  .auth-form input,
+  .auth-form select,
+  .auth-form textarea {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+  }
+  
+  .auth-form input:focus,
+  .auth-form select:focus,
+  .auth-form textarea:focus {
+    outline: none;
+    border-color: #0d99ff;
+  }
+  
+  /* Button */
+  .auth-form button {
+    background-color: #0d99ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-form button:hover {
+    background-color: #007ddc;
+  }
+  
+  /* Success Message */
+  .success {
+    text-align: center;
+    color: green;
+    font-weight: 500;
+  }
+  
+  /* Link Styling */
+  .auth-form p {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  
+  .auth-form a {
+    color: #0d99ff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .auth-form a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Navbar Auth - User Initials + Logout */
+  .auth-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* ✅ User Initials Circle */
+  .user-initials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #87ceeb; /* Sky Blue */
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-right: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  

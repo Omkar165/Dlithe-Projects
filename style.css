@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+}
+
+h1 p {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Profile Image */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 4px solid #333;
+}
+
+/* Personal Details */
+p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+strong {
+    color: #555;
+}
+
+/* Projects Section */
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+h2 p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #007bff;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

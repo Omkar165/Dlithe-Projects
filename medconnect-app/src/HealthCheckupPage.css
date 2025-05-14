@@ -1,0 +1,196 @@
+/* Reset or base styles (optional) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* -------------- Navbar -------------- */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    top: -20px; /* Moves the header more upwards */
+    width: 100%; /* Ensures the navbar covers full width */
+    left: 0; /* Aligns the navbar to the left edge */
+    right: 0; /* Aligns the navbar to the right edge */
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-img {
+    width: 70px; /* Increased from 60px to 70px */
+    height: auto;
+    margin-bottom: 0.2rem;
+}
+
+.logo h1 {
+    font-size: 1.3rem;
+    color: #007bff;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.sign-up-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.sign-up-btn:hover {
+    background-color: #0056b3;
+}
+
+/* -------------- Footer -------------- */
+.footer {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background-color: #f1f1f1;
+    color: #333;
+    position: relative;
+    bottom: -30px; /* Moves the footer more downward */
+    width: 100%; /* Ensures the footer covers full width */
+    left: 0; /* Aligns the footer to the left edge */
+    right: 0; /* Aligns the footer to the right edge */
+}
+
+/* Additional footer information */
+.footer::after {
+    content: "MedConnect is your comprehensive healthcare companion connecting you with top medical professionals. Contact us: contact@medconnect.com";
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+/* -------------- Health Checkup Section -------------- */
+.health-checkup-container {
+    padding: 2rem;
+    background-color: #f6f8fc; /* Soft background color for the section */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.packages-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.package-card {
+    background-color: #ffffff;
+    border: 1px solid #e3e4e8; /* Light grey border */
+    border-radius: 0.5rem;
+    width: 300px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align content vertically */
+}
+
+.package-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.package-card h3 {
+    font-size: 1.5rem; /* Larger font size for the heading */
+    color: #2d3e50; /* Darker shade for heading, making it professional */
+    margin-bottom: 1rem;
+    font-weight: 600; /* Bold heading */
+}
+
+.package-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.package-card ul li {
+    margin-bottom: 0.5rem;
+    color: #495057; /* Dark grey for list items */
+    font-size: 1rem;
+}
+
+/* Price styling */
+.package-card .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #28a745; /* Green color for the price to make it look more professional */
+    margin: 1rem 0; /* Adds some spacing around the price */
+}
+
+/* -------------- Book Now Button (Updated Professional Look) -------------- */
+.package-card .book-btn {
+    background-color: #1a73e8; /* Soft blue color for a professional yet inviting look */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px; /* Rounded corners for a softer and more inviting look */
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    margin-top: auto; /* Ensures button is aligned at the bottom of the card */
+    width: 100%; /* Ensures the button spans the full width of the card */
+    text-align: center; /* Centers the text */
+}
+
+.package-card .book-btn:hover {
+    background-color: #1558b0; /* Darker blue on hover for a more professional feel */
+    transform: translateY(-3px); /* Gives a subtle "lifting" effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
+}
+
+.package-card .book-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(60, 163, 242, 0.5); /* Focus effect for accessibility */
+}
+
+.package-card .book-btn:active {
+    transform: translateY(1px); /* Lifts the button when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow on click */
+}
+
+.package-card .amount-wrapper {
+    display: flex;
+    justify-content: space-between; /* Aligns the price and button */
+    align-items: center;
+}
